@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bapatla Waves showcases beaches, travel tips, and local experiences along the Bapatla coast in Andhra Pradesh, India."
+    />
+    <meta
+      name="keywords"
+      content="Bapatla beaches, Suryalanka beach, Bapatla coast, Andhra Pradesh beaches, beach tourism in India"
+    />
+    <title>Bapatla Waves | Discover the Beaches of Bapatla</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Bapatla Waves home">
+          <img class="brand-mark" src="assets/bapatla-logo.png" alt="Bapatla Waves logo" />
+          <span>Bapatla Waves</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <div class="nav-group">
+            <a href="explore.html" class="nav-trigger">Explore</a>
+            <div class="nav-dropdown">
+              <a href="index.html#beaches">Beaches</a>
+              <a href="beach-activities.html">Beach Activities</a>
+              <a href="temples.html">Temples</a>
+              <a href="tourist-places.html">Tourist Places</a>
+            </div>
+          </div>
+
+
+          <div class="nav-group">
+            <a href="hotels.html" class="nav-trigger">Stay</a>
+          </div>
+
+          <div class="nav-group">
+            <a href="food.html" class="nav-trigger">Food</a>
+            <div class="nav-dropdown">
+              <a href="streetfood.html">Street Food</a>
+              <a href="restaurants.html">Restaurants</a>
+            </div>
+          </div>
+
+          <div class="nav-group">
+            <a href="shopping.html" class="nav-trigger">Shopping</a>
+            <div class="nav-dropdown">
+              <a href="shopping-clothing.html">Clothing</a>
+              <a href="shopping-ready-made.html">Ready Made</a>
+              <a href="shopping-electronics.html">Electronics</a>
+              <a href="shopping-sarees.html">Sarees</a>
+            </div>
+          </div>
+
+          <div class="nav-group">
+            <a href="travel.html" class="nav-trigger">Travel</a>
+            <div class="nav-dropdown">
+              <a href="bus-train-timings.html">Transport</a>
+              <a href="rentals.html">Rentals</a>
+            </div>
+          </div>
+
+          <div class="nav-group">
+            <a href="help.html" class="nav-trigger">Help</a>
+            <div class="nav-dropdown">
+              <a href="emergency-help.html">Emergency Help</a>
+              <a href="hospitals-clinics.html">Hospitals &amp; Clinics</a>
+              <a href="disaster-recovery.html">Disaster Recovery</a>
+              <a href="travel-safety-tips.html">Travel Safety Tips</a>
+            </div>
+          </div>
+
+          <a href="index.html#contact">Contact</a>
+        </nav>
+
+        <div class="lang-toggle" aria-label="Language switcher">
+          <button class="lang-btn active" data-lang="en" type="button">EN</button>
+          <button class="lang-btn" data-lang="te" type="button">తెలు</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Coastal escape in Andhra Pradesh</p>
+          <h1>
+            <span data-i18n="hero.title.line1">Discover the Waves</span>
+            <span data-i18n="hero.title.line2">of Bapatla</span>
+          </h1>
+          <p class="lead" data-i18n="hero.lead">
+            Explore wide sandy shores, golden sunrises, fresh seafood and peaceful seaside moments along the Bapatla coast.
+          </p>
+          <div class="hero-actions">
+            <a href="#visit" class="btn btn-primary" data-i18n="hero.cta.primary">Plan your visit</a>
+            <a href="#beaches" class="btn btn-secondary" data-i18n="hero.cta.secondary">Explore beaches</a>
+          </div>
+          <ul class="hero-highlights" aria-label="Highlights">
+            <li data-i18n="hero.highlight1">5 scenic shorelines</li>
+            <li data-i18n="hero.highlight2">Best in Oct–Mar</li>
+            <li data-i18n="hero.highlight3">Easy weekend getaway</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="stats">
+        <div class="container stats-grid">
+          <div class="stat-item">
+            <strong>5+</strong>
+            <span data-i18n="stats.beaches">Beach stretches</span>
+          </div>
+          <div class="stat-item">
+            <strong>120 km</strong>
+            <span data-i18n="stats.coastline">Coastal shoreline</span>
+          </div>
+          <div class="stat-item">
+            <strong>4.8/5</strong>
+            <span data-i18n="stats.traveler">Traveler rating</span>
+          </div>
+          <div class="stat-item">
+            <strong>24/7</strong>
+            <span data-i18n="stats.wave">Sea breeze energy</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section muted" id="explore">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow accent">Quick guide</p>
+            <h2>Plan your Bapatla trip</h2>
+          </div>
+
+          <div class="guide-grid">
+            <article class="info-card" id="explore-activities">
+              <div class="icon">🛶</div>
+              <h3>Beach Activities</h3>
+              <ul>
+                <li>Para gliding</li>
+                <li>Speed boating</li>
+                <li>Jet skiing and beach games</li>
+              </ul>
+            </article>
+
+            <article class="info-card" id="explore-temples">
+              <div class="icon">🛕</div>
+              <h3>Temples</h3>
+              <ul>
+                <li>Local temples</li>
+                <li>Sunrise viewpoints</li>
+                <li>Nearby heritage sites</li>
+              </ul>
+            </article>
+
+            <article class="info-card" id="stay">
+              <div class="icon">🏨</div>
+              <h3>Hotels</h3>
+              <ul>
+                <li>Beach resorts</li>
+                <li>Budget stays</li>
+                <li>Family-friendly lodgings</li>
+              </ul>
+            </article>
+
+            <article class="info-card" id="stay-hotels">
+              <div class="icon">🏨</div>
+              <h3>Hotels</h3>
+              <ul>
+                <li>Beach resorts</li>
+                <li>Budget stays</li>
+                <li>Family-friendly lodgings</li>
+              </ul>
+            </article>
+
+            <article class="info-card" id="stay-rentals">
+              <div class="icon">🚗</div>
+              <h3>Rentals</h3>
+              <ul>
+                <li>Car rental services</li>
+                <li>Bike rental options</li>
+                <li>Tourist pickup points</li>
+              </ul>
+            </article>
+
+            <article class="info-card" id="food-restaurants">
+              <div class="icon">🍽️</div>
+              <h3>Restaurants</h3>
+              <ul>
+                <li>Seafood restaurants</li>
+                <li>Local Andhra meals</li>
+                <li>Street food and snacks</li>
+              </ul>
+            </article>
+
+            <article class="info-card" id="food-shopping">
+              <div class="icon">🛍️</div>
+              <h3>Shopping</h3>
+              <ul>
+                <li>Local craft shops</li>
+                <li>Souvenirs and beach essentials</li>
+                <li>Sweet shops and local treats</li>
+              </ul>
+            </article>
+
+            <article class="info-card" id="travel-transport">
+              <div class="icon">🚌</div>
+              <h3>Transport</h3>
+              <ul>
+                <li>Bus and train timings</li>
+                <li>Hyderabad, Vizag, Chennai, Vijayawada</li>
+                <li>Station arrival updates</li>
+              </ul>
+            </article>
+
+            <article class="info-card" id="help-emergency">
+              <div class="icon">🚑</div>
+              <h3>Emergency Help</h3>
+              <ul>
+                <li>Emergency contacts</li>
+                <li>Hospitals and clinics</li>
+                <li>Disaster recovery guidance</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="beaches">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow accent" data-i18n="section.beaches.eyebrow">Beach escapes</p>
+            <h2 data-i18n="section.beaches.title">Find your favorite stretch of sand</h2>
+          </div>
+
+          <div class="beach-grid">
+            <article class="beach-card">
+              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80" alt="Suryalanka Beach" />
+              <div class="beach-content">
+                <h3>Suryalanka Beach</h3>
+                <p data-i18n="beach.suryalanka.desc">A lively shoreline with long stretches of sand, early morning calm and a popular promenade.</p>
+                <ul>
+                  <li><span data-i18n="beach.bestTime">Best time:</span> <strong data-i18n="beach.suryalanka.bestTime">Nov–Feb</strong></li>
+                  <li><span data-i18n="beach.distance">Distance:</span> <strong>12 km</strong></li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="beach-card">
+              <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80" alt="Pandurangapuram Beach" />
+              <div class="beach-content">
+                <h3>Pandurangapuram Beach</h3>
+                <p>Peaceful and scenic, this stretch offers a more relaxed coastal experience with wide-open sea views.</p>
+                <ul>
+                  <li><span data-i18n="beach.bestTime">Best time:</span> <strong>Nov–Jan</strong></li>
+                  <li><span data-i18n="beach.distance">Distance:</span> <strong>9 km</strong></li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="beach-card">
+              <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=900&q=80" alt="Ramapuram Beach" />
+              <div class="beach-content">
+                <h3>Ramapuram Beach</h3>
+                <p>A quieter fishing-community coastline where visitors can enjoy clean sands and a slower, more local feel.</p>
+                <ul>
+                  <li><span data-i18n="beach.bestTime">Best time:</span> <strong>Oct–Feb</strong></li>
+                  <li><span data-i18n="beach.distance">Distance:</span> <strong>16 km</strong></li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="beach-card">
+              <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80" alt="Vadarevu Beach" />
+              <div class="beach-content">
+                <h3>Vadarevu Beach</h3>
+                <p data-i18n="beach.vadarevu.desc">A quieter shore with a calm ambience and wide-open views that are perfect for a slow morning.</p>
+                <ul>
+                  <li><span data-i18n="beach.bestTime">Best time:</span> <strong data-i18n="beach.vadarevu.bestTime">Nov–Jan</strong></li>
+                  <li><span data-i18n="beach.distance">Distance:</span> <strong>18 km</strong></li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="beach-card">
+              <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Odaarevu Beach" />
+              <div class="beach-content">
+                <h3>Odarevu Beach</h3>
+                <p>One of the quieter coastal spots, ideal for relaxing walks, sunset views and a gentler beach atmosphere.</p>
+                <ul>
+                  <li><span data-i18n="beach.bestTime">Best time:</span> <strong>Nov–Feb</strong></li>
+                  <li><span data-i18n="beach.distance">Distance:</span> <strong>14 km</strong></li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section muted" id="guide">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow accent">Travel guide</p>
+            <h2>Everything you need for a smooth Bapatla trip</h2>
+          </div>
+
+          <div class="guide-grid">
+            <article class="info-card">
+              <div class="icon">🏨</div>
+              <h3>Hotels</h3>
+              <ul>
+                <li>Beach resorts</li>
+                <li>Budget stays near the coast</li>
+                <li>Family-friendly lodgings</li>
+              </ul>
+            </article>
+            <article class="info-card">
+              <div class="icon">🛶</div>
+              <h3>Beach Activities</h3>
+              <ul>
+                <li>Para gliding</li>
+                <li>Speed boating</li>
+                <li>Jet skiing and beach games</li>
+              </ul>
+            </article>
+            <article class="info-card">
+              <div class="icon">🍽️</div>
+              <h3>Restaurants & Street Food</h3>
+              <ul>
+                <li>Seafood restaurants</li>
+                <li>Local Andhra meals</li>
+                <li>Street food and snacks</li>
+              </ul>
+            </article>
+            <article class="info-card">
+              <div class="icon">🛕</div>
+              <h3>Temples & Tourist Places</h3>
+              <ul>
+                <li>Local temples</li>
+                <li>Sunrise viewpoints</li>
+                <li>Near-by heritage spots</li>
+              </ul>
+            </article>
+            <article class="info-card">
+              <div class="icon">🚌</div>
+              <h3>Bus & Train Timings</h3>
+              <ul>
+                <li>Hyderabad, Vizag, Chennai, Vijayawada</li>
+                <li>Express and local bus schedules</li>
+                <li>Station arrival updates</li>
+              </ul>
+            </article>
+            <article class="info-card">
+              <div class="icon">🛍️</div>
+              <h3>Shopping</h3>
+              <ul>
+                <li>Local craft shops</li>
+                <li>Souvenirs and beach essentials</li>
+                <li>Sweet shops and local treats</li>
+              </ul>
+            </article>
+            <article class="info-card">
+              <div class="icon">🚗</div>
+              <h3>Rentals</h3>
+              <ul>
+                <li>Car rental services</li>
+                <li>Bike rental options</li>
+                <li>Tourist-friendly pickup points</li>
+              </ul>
+            </article>
+            <article class="info-card">
+              <div class="icon">🚑</div>
+              <h3>Emergency Help</h3>
+              <ul>
+                <li>Emergency contacts</li>
+                <li>Hospitals and clinics</li>
+                <li>Disaster recovery guidance</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section muted" id="activities">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow accent" data-i18n="section.activities.eyebrow">Experience more</p>
+            <h2 data-i18n="section.activities.title">Things to do around the coast</h2>
+          </div>
+
+          <div class="activity-grid">
+            <div class="activity-card">
+              <div class="icon">🌊</div>
+              <h3 data-i18n="activities.beach.title">Beach activities</h3>
+              <p data-i18n="activities.beach.text">Enjoy gentle waves, promenade walks, family picnics, beach games and sunset photography.</p>
+            </div>
+            <div class="activity-card">
+              <div class="icon">🌅</div>
+              <h3 data-i18n="activities.sunrise.title">Sunrise & sunset spots</h3>
+              <p data-i18n="activities.sunrise.text">Catch golden light from the shoreline, the fishing docks or the nearby cliff viewpoints.</p>
+            </div>
+            <div class="activity-card">
+              <div class="icon">🍽️</div>
+              <h3 data-i18n="activities.food.title">Local food</h3>
+              <p data-i18n="activities.food.text">Taste Andhra favourites like spicy seafood, fresh prawns, coconut-based curries and street snacks.</p>
+            </div>
+            <div class="activity-card">
+              <div class="icon">🛕</div>
+              <h3 data-i18n="activities.temples.title">Nearby temples</h3>
+              <p data-i18n="activities.temples.text">Visit heritage temples and peaceful pilgrimage sites located close to the coastline.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="visit">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow accent" data-i18n="section.visit.eyebrow">Travel details</p>
+            <h2 data-i18n="section.visit.title">Plan your Bapatla getaway</h2>
+          </div>
+
+          <div class="visit-layout">
+            <div class="visit-card">
+              <h3 data-i18n="visit.reach.title">How to reach</h3>
+              <ul>
+                <li><strong data-i18n="visit.reach.road">By road:</strong> <span data-i18n="visit.reach.roadText">Well connected via NH 16 and local highways from Vijayawada, Guntur and Chennai.</span></li>
+                <li><strong data-i18n="visit.reach.rail">By rail:</strong> <span data-i18n="visit.reach.railText">Bapatla and nearby stations offer easy access for scenic train journeys.</span></li>
+                <li><strong data-i18n="visit.reach.air">Nearest airport:</strong> <span data-i18n="visit.reach.airText">Vijayawada Airport is the closest major airport, about 3–4 hours away by road.</span></li>
+              </ul>
+            </div>
+            <div class="visit-card">
+              <h3 data-i18n="visit.experience.title">Best season & stay</h3>
+              <ul>
+                <li><strong data-i18n="visit.season">Best season:</strong> <span data-i18n="visit.seasonText">October to March for cooler weather and comfortable beach walks.</span></li>
+                <li><strong data-i18n="visit.stay">Stay options:</strong> <span data-i18n="visit.stayText">Choose from family-friendly stays, beach resorts and budget guesthouses near the coast.</span></li>
+                <li><strong data-i18n="visit.safety">Safety tips:</strong> <span data-i18n="visit.safetyText">Swim only in designated areas, keep an eye on children and avoid late-night isolated stretches.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery-section" id="gallery">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow accent" data-i18n="section.gallery.eyebrow">Coastal moments</p>
+            <h2 data-i18n="section.gallery.title">Gallery</h2>
+          </div>
+
+          <div class="gallery-grid">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Beach sunset" />
+            <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=80" alt="Waves touching shore" />
+            <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=800&q=80" alt="Seaside coastline" />
+            <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80" alt="Tropical shoreline" />
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Ocean view" />
+            <video controls poster="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80">
+              <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <section class="section app-section" id="app">
+        <div class="container app-wrap">
+          <div>
+            <p class="eyebrow accent" data-i18n="section.app.eyebrow">Coming soon</p>
+            <h2 data-i18n="section.app.title">Bapatla Waves Android app</h2>
+            <p data-i18n="section.app.text">Your personal guide to beach routes, hidden viewpoints, local experiences and travel planning across the coast.</p>
+            <div class="badge" data-i18n="section.app.badge">Coming soon on Google Play</div>
+          </div>
+
+          <form class="signup-box" id="app-signup">
+            <label class="sr-only" for="email">Email</label>
+            <input id="email" type="email" placeholder="Your email address" required />
+            <button type="submit" class="btn btn-primary" data-i18n="section.app.button">Notify me</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="container about-wrap">
+          <div>
+            <p class="eyebrow accent" data-i18n="section.about.eyebrow">Our story</p>
+            <h2 data-i18n="section.about.title">Bringing Bapatla’s coast to curious travelers</h2>
+          </div>
+          <p data-i18n="section.about.text">
+            Bapatla Waves is designed to spotlight the beauty of Bapatla’s beaches, local culture and easy travel experiences for tourists, families, photographers and weekend explorers.
+          </p>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="container contact-wrap">
+          <div class="contact-copy">
+            <p class="eyebrow accent" data-i18n="section.contact.eyebrow">Get in touch</p>
+            <h2 data-i18n="section.contact.title">Plan your next beach trip with us</h2>
+            <ul class="contact-details">
+              <li><a href="mailto:hello@bapatlawaves.com">hello@bapatlawaves.com</a></li>
+              <li><a href="https://wa.me/919999999999" target="_blank" rel="noreferrer">WhatsApp</a></li>
+              <li><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a></li>
+              <li><a href="https://www.youtube.com/" target="_blank" rel="noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+
+          <form class="contact-form" id="contact-form">
+            <div class="field-row">
+              <label>
+                <span data-i18n="contact.name">Name</span>
+                <input type="text" name="name" placeholder="Your name" required />
+              </label>
+            </div>
+            <div class="field-row">
+              <label>
+                <span data-i18n="contact.email">Email</span>
+                <input type="email" name="email" placeholder="your@email.com" required />
+              </label>
+            </div>
+            <div class="field-row">
+              <label>
+                <span data-i18n="contact.message">Message</span>
+                <textarea name="message" rows="5" placeholder="Tell us what you are looking for" required></textarea>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary" data-i18n="contact.submit">Send message</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section map-section">
+        <div class="container">
+          <div class="map-wrap">
+            <iframe
+              title="Bapatla coast map"
+              src="https://www.google.com/maps?q=Bapatla%20Beach%20Andhra%20Pradesh&z=12&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div>
+          <a href="#home" class="brand footer-brand">
+           <img class="brand-mark" src="assets/bapatla-logo.png" alt="Bapatla Waves logo" />
+           <span>Bapatla Waves</span>
+          </a>
+        </div>
+
+        <div class="footer-links">
+          <a href="#beaches">Beaches</a>
+          <a href="hotels.html">Hotels</a>
+          <a href="beach-activities.html">Beach Activities</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <p>© 2026 Bapatla Waves</p>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

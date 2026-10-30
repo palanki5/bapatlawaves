@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Car and bike rental services for Bapatla and nearby tourist places." />
+    <title>Car & Bike Rentals in Bapatla | Bapatla Waves</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Bapatla Waves home">
+          <img class="brand-mark" src="assets/bapatla-logo.png" alt="Bapatla Waves logo" />
+          <span>Bapatla Waves</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <div class="nav-group">
+            <a href="explore.html" class="nav-trigger">Explore</a>
+            <div class="nav-dropdown">
+              <a href="index.html#beaches">Beaches</a>
+              <a href="beach-activities.html">Beach Activities</a>
+              <a href="temples.html">Temples</a>
+              <a href="tourist-places.html">Tourist Places</a>
+            </div>
+          </div>
+
+
+          <div class="nav-group">
+            <a href="hotels.html" class="nav-trigger">Stay</a>
+          </div>
+
+          <div class="nav-group">
+            <a href="food.html" class="nav-trigger">Food</a>
+            <div class="nav-dropdown">
+              <a href="streetfood.html">Street Food</a>
+              <a href="restaurants.html">Restaurants</a>
+            </div>
+          </div>
+
+          <div class="nav-group">
+            <a href="shopping.html" class="nav-trigger">Shopping</a>
+            <div class="nav-dropdown">
+              <a href="shopping-clothing.html">Clothing</a>
+              <a href="shopping-ready-made.html">Ready Made</a>
+              <a href="shopping-electronics.html">Electronics</a>
+              <a href="shopping-sarees.html">Sarees</a>
+            </div>
+          </div>
+
+          <div class="nav-group">
+            <a href="travel.html" class="nav-trigger">Travel</a>
+            <div class="nav-dropdown">
+              <a href="bus-train-timings.html">Transport</a>
+              <a href="rentals.html">Rentals</a>
+            </div>
+          </div>
+
+          <div class="nav-group">
+            <a href="help.html" class="nav-trigger">Help</a>
+            <div class="nav-dropdown">
+              <a href="emergency-help.html">Emergency Help</a>
+              <a href="hospitals-clinics.html">Hospitals &amp; Clinics</a>
+              <a href="disaster-recovery.html">Disaster Recovery</a>
+              <a href="travel-safety-tips.html">Travel Safety Tips</a>
+            </div>
+          </div>
+
+          <a href="index.html#contact">Contact</a>
+        </nav>
+
+        <div class="lang-toggle" aria-label="Language switcher">
+          <button class="lang-btn active" data-lang="en" type="button">EN</button>
+          <button class="lang-btn" data-lang="te" type="button">తెలు</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow accent">On-the-go travel</p>
+          <h1 class="page-title">Car & Bike Rentals</h1>
+          <p class="page-subtitle">Rent a vehicle for beach hopping, temple visits and flexible local sightseeing across Bapatla and nearby areas.</p>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="section-heading" style="margin-top: 2.8rem;">
+          <p class="eyebrow accent">Flexible bookings</p>
+          <h2>Rental providers near Bapatla</h2>
+        </div>
+
+        <div class="hotel-filter-tabs" aria-label="Rental categories">
+          <button class="hotel-filter-btn active" type="button" data-category-filter="Car Rentals">Car Rentals</button>
+          <button class="hotel-filter-btn" type="button" data-category-filter="Bike Rentals">Bike Rentals</button>
+          <button class="hotel-filter-btn" type="button" data-category-filter="Cycle Rentals">Cycle Rentals</button>
+          <button class="hotel-filter-btn" type="button" data-category-filter="Taxi Services">Taxi Services</button>
+        </div>
+
+        <div class="tourist-gallery" id="rentals-gallery" data-list-file="rentals/rentals_list.txt" aria-live="polite"></div>
+
+        <div class="page-grid" style="margin-top: 2.8rem;">
+          <article class="detail-card">
+            <h3>Car rental services</h3>
+            <ul>
+              <li>Ideal for families and small groups exploring multiple beaches</li>
+              <li>Good for temple visits and moving between coastal points</li>
+              <li>Choose rentals with clear agreements and verified drivers</li>
+            </ul>
+          </article>
+
+          <article class="detail-card">
+            <h3>Bike rental options</h3>
+            <ul>
+              <li>Convenient for quick local rides and compact sightseeing</li>
+              <li>Popular among travelers who want flexible travel plans</li>
+              <li>Always confirm helmet and safety guidance before use</li>
+            </ul>
+          </article>
+
+          <article class="detail-card">
+            <h3>Tourist pickup</h3>
+            <ul>
+              <li>Ask for pickup points near train/bus stations and hotels</li>
+              <li>Ideal for airport or station transfers from nearby cities</li>
+              <li>Confirm fair estimates before booking</li>
+            </ul>
+          </article>
+
+          <article class="detail-card">
+            <h3>Tips</h3>
+            <ul>
+              <li>Check vehicle condition and fuel policy before starting</li>
+              <li>Prefer documented operators for smoother travel</li>
+              <li>Have a backup plan for late-night or remote route travel</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="quick-links">
+          <a href="bus-train-timings.html">Timings</a>
+          <a href="shopping.html">Shopping</a>
+          <a href="emergency-help.html">Emergency Help</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div>
+          <a href="index.html" class="brand footer-brand">
+            <img class="brand-mark" src="assets/bapatla-logo.png" alt="Bapatla Waves logo" />
+            <span>Bapatla Waves</span>
+          </a>
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html#beaches">Beaches</a>
+          <a href="hotels.html">Hotels</a>
+          <a href="beach-activities.html">Beach Activities</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+
+        <p>© 2026 Bapatla Waves</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

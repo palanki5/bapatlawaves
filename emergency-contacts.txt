@@ -1,0 +1,4 @@
+Police Station: 112
+Ambulance: 108
+Emergency Boat: 1554
+District Collector: 08643-223300

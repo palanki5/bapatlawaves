@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hotels and accommodation options in Bapatla, Andhra Pradesh." />
+    <title>Hotels in Bapatla | Bapatla Waves</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Bapatla Waves home">
+          <img class="brand-mark" src="assets/bapatla-logo.png" alt="Bapatla Waves logo" />
+          <span>Bapatla Waves</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <div class="nav-group">
+            <a href="explore.html" class="nav-trigger">Explore</a>
+            <div class="nav-dropdown">
+              <a href="index.html#beaches">Beaches</a>
+              <a href="beach-activities.html">Beach Activities</a>
+              <a href="temples.html">Temples</a>
+              <a href="tourist-places.html">Tourist Places</a>
+            </div>
+          </div>
+
+
+          <div class="nav-group">
+            <a href="hotels.html" class="nav-trigger">Stay</a>
+          </div>
+
+          <div class="nav-group">
+            <a href="food.html" class="nav-trigger">Food</a>
+            <div class="nav-dropdown">
+              <a href="streetfood.html">Street Food</a>
+              <a href="restaurants.html">Restaurants</a>
+            </div>
+          </div>
+
+          <div class="nav-group">
+            <a href="shopping.html" class="nav-trigger">Shopping</a>
+            <div class="nav-dropdown">
+              <a href="shopping-clothing.html">Clothing</a>
+              <a href="shopping-ready-made.html">Ready Made</a>
+              <a href="shopping-electronics.html">Electronics</a>
+              <a href="shopping-sarees.html">Sarees</a>
+            </div>
+          </div>
+
+          <div class="nav-group">
+            <a href="travel.html" class="nav-trigger">Travel</a>
+            <div class="nav-dropdown">
+              <a href="bus-train-timings.html">Transport</a>
+              <a href="rentals.html">Rentals</a>
+            </div>
+          </div>
+
+          <div class="nav-group">
+            <a href="help.html" class="nav-trigger">Help</a>
+            <div class="nav-dropdown">
+              <a href="emergency-help.html">Emergency Help</a>
+              <a href="hospitals-clinics.html">Hospitals &amp; Clinics</a>
+              <a href="disaster-recovery.html">Disaster Recovery</a>
+              <a href="travel-safety-tips.html">Travel Safety Tips</a>
+            </div>
+          </div>
+
+          <a href="index.html#contact">Contact</a>
+        </nav>
+
+        <div class="lang-toggle" aria-label="Language switcher">
+          <button class="lang-btn active" data-lang="en" type="button">EN</button>
+          <button class="lang-btn" data-lang="te" type="button">తెలు</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow accent">Stay near the coast</p>
+          <h1 class="page-title">Hotels in Bapatla</h1>
+          <p class="page-subtitle">Choose from beach resorts, family-friendly lodgings and simple budget stays close to the shoreline and local transport.</p>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="section-heading" style="margin-top: 2.8rem;">
+          <p class="eyebrow accent">Stay options</p>
+          <h2>Recommended stays in and around Bapatla</h2>
+        </div>
+
+        <div class="hotel-filter-tabs" aria-label="Hotel categories">
+          <button class="hotel-filter-btn active" type="button" data-hotel-category="Beach resorts">Beach resorts</button>
+          <button class="hotel-filter-btn" type="button" data-hotel-category="Budget stays">Budget stays</button>
+          <button class="hotel-filter-btn" type="button" data-hotel-category="Family-friendly lodgings">Family-friendly lodgings</button>
+          <button class="hotel-filter-btn" type="button" data-hotel-category="3 & 5 Star Hotels">3 &amp; 5 Star Hotels</button>
+        </div>
+
+        <div class="tourist-gallery" id="hotels-gallery" data-list-file="hotels/hotels_list.txt" aria-live="polite"></div>
+
+        <div class="page-grid" style="margin-top: 2.8rem;">
+          <article class="detail-card">
+            <h3>Beach resorts</h3>
+            <ul>
+              <li>Premium stays with sea-view balconies and family rooms</li>
+              <li>Suitable for weekend getaways and relaxed coastal vacations</li>
+              <li>Check for early booking discounts during peak season</li>
+            </ul>
+          </article>
+
+          <article class="detail-card">
+            <h3>Budget stays</h3>
+            <ul>
+              <li>Affordable guesthouses near the beaches and town center</li>
+              <li>Good options for solo travelers and short overnight visits</li>
+              <li>Look for free parking, basic Wi-Fi and local transport access</li>
+            </ul>
+          </article>
+
+          <article class="detail-card">
+            <h3>Family-friendly lodgings</h3>
+            <ul>
+              <li>Large rooms, safe local surroundings and easy beach access</li>
+              <li>Ideal for groups visiting with children and elderly family members</li>
+              <li>Prefer properties with 24/7 reception and emergency support</li>
+            </ul>
+          </article>
+
+          <article class="detail-card">
+            <h3>Traveler tips</h3>
+            <ul>
+              <li>Book early during October to March for better room options</li>
+              <li>Confirm whether towels, parking and pick-up are included</li>
+              <li>Ask for nearby beach access points and local dining suggestions</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="quick-links">
+          <a href="beach-activities.html">Beach Activities</a>
+          <a href="restaurants.html">Restaurants</a>
+          <a href="bus-train-timings.html">Train Timings</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div>
+          <a href="index.html" class="brand footer-brand">
+            <img class="brand-mark" src="assets/bapatla-logo.png" alt="Bapatla Waves logo" />
+            <span>Bapatla Waves</span>
+          </a>
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html#beaches">Beaches</a>
+          <a href="hotels.html">Hotels</a>
+          <a href="beach-activities.html">Beach Activities</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+
+        <p>© 2026 Bapatla Waves</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
