@@ -1,163 +1,3 @@
-const translations = {
-  en: {
-    'nav.home': 'Home',
-    'nav.beaches': 'Beaches',
-    'nav.guide': 'Travel Guide',
-    'nav.activities': 'Things to Do',
-    'nav.visit': 'Plan Your Visit',
-    'nav.gallery': 'Gallery',
-    'nav.app': 'App',
-    'nav.about': 'About',
-    'nav.contact': 'Contact',
-    'hero.eyebrow': 'Coastal escape in Andhra Pradesh',
-    'hero.title.line1': 'Discover the Waves',
-    'hero.title.line2': 'of Bapatla',
-    'hero.lead': 'Explore wide sandy shores, golden sunrises, fresh seafood and peaceful seaside moments along the Bapatla coast.',
-    'hero.cta.primary': 'Plan your visit',
-    'hero.cta.secondary': 'Explore beaches',
-    'hero.highlight1': '5 scenic shorelines',
-    'hero.highlight2': 'Best in Oct–Mar',
-    'hero.highlight3': 'Easy weekend getaway',
-    'stats.beaches': 'Beach stretches',
-    'stats.coastline': 'Coastal shoreline',
-    'stats.traveler': 'Traveler rating',
-    'stats.wave': 'Sea breeze energy',
-    'section.beaches.eyebrow': 'Beach escapes',
-    'section.beaches.title': 'Find your favorite stretch of sand',
-    'beach.bestTime': 'Best time:',
-    'beach.distance': 'Distance:',
-    'beach.suryalanka.desc': 'A lively beach known for its clean shoreline, long promenade and creamy sunrise views.',
-    'beach.suryalanka.bestTime': 'Nov–Feb',
-    'beach.bapatla.desc': 'The heart of the coastline, ideal for sunset walks, family outings and quick seaside breaks.',
-    'beach.bapatla.bestTime': 'Oct–Mar',
-    'beach.vadarevu.desc': 'A quieter shore with a calm ambience and wide-open views that are perfect for a slow morning.',
-    'beach.vadarevu.bestTime': 'Nov–Jan',
-    'beach.chirala.desc': 'Known for its clean sands, local flavor and easy access, with a welcoming village-side vibe.',
-    'beach.chirala.bestTime': 'Sep–Feb',
-    'section.activities.eyebrow': 'Experience more',
-    'section.activities.title': 'Things to do around the coast',
-    'activities.beach.title': 'Beach activities',
-    'activities.beach.text': 'Enjoy gentle waves, promenade walks, family picnics, beach games and sunset photography.',
-    'activities.sunrise.title': 'Sunrise & sunset spots',
-    'activities.sunrise.text': 'Catch golden light from the shoreline, the fishing docks or the nearby cliff viewpoints.',
-    'activities.food.title': 'Local food',
-    'activities.food.text': 'Taste Andhra favourites like spicy seafood, fresh prawns, coconut-based curries and street snacks.',
-    'activities.temples.title': 'Nearby temples',
-    'activities.temples.text': 'Visit heritage temples and peaceful pilgrimage sites located close to the coastline.',
-    'section.visit.eyebrow': 'Travel details',
-    'section.visit.title': 'Plan your Bapatla getaway',
-    'visit.reach.title': 'How to reach',
-    'visit.reach.road': 'By road:',
-    'visit.reach.roadText': 'Well connected via NH 16 and local highways from Vijayawada, Guntur and Chennai.',
-    'visit.reach.rail': 'By rail:',
-    'visit.reach.railText': 'Bapatla and nearby stations offer easy access for scenic train journeys.',
-    'visit.reach.air': 'Nearest airport:',
-    'visit.reach.airText': 'Vijayawada Airport is the closest major airport, about 3–4 hours away by road.',
-    'visit.experience.title': 'Best season & stay',
-    'visit.season': 'Best season:',
-    'visit.seasonText': 'October to March for cooler weather and comfortable beach walks.',
-    'visit.stay': 'Stay options:',
-    'visit.stayText': 'Choose from family-friendly stays, beach resorts and budget guesthouses near the coast.',
-    'visit.safety': 'Safety tips:',
-    'visit.safetyText': 'Swim only in designated areas, keep an eye on children and avoid late-night isolated stretches.',
-    'section.gallery.eyebrow': 'Coastal moments',
-    'section.gallery.title': 'Gallery',
-    'section.app.eyebrow': 'Coming soon',
-    'section.app.title': 'Bapatla Waves Android app',
-    'section.app.text': 'Your personal guide to beach routes, hidden viewpoints, local experiences and travel planning across the coast.',
-    'section.app.badge': 'Coming soon on Google Play',
-    'section.app.button': 'Notify me',
-    'section.about.eyebrow': 'Our story',
-    'section.about.title': 'Bringing Bapatla’s coast to curious travelers',
-    'section.about.text': 'Bapatla Waves is designed to spotlight the beauty of Bapatla’s beaches, local culture and easy travel experiences for tourists, families, photographers and weekend explorers.',
-    'section.contact.eyebrow': 'Get in touch',
-    'section.contact.title': 'Plan your next beach trip with us',
-    'contact.name': 'Name',
-    'contact.email': 'Email',
-    'contact.message': 'Message',
-    'contact.submit': 'Send message'
-  },
-  te: {
-    'nav.home': 'హోమ్',
-    'nav.beaches': 'చారువులు',
-    'nav.guide': 'ప్రయాణ మార్గదర్శి',
-    'nav.activities': 'చర్యలు',
-    'nav.visit': 'ప్రయాణ ప్రణాళిక',
-    'nav.gallery': 'గ్యాలరీ',
-    'nav.app': 'అప్స్',
-    'nav.about': 'మా గురించి',
-    'nav.contact': 'సంప్రదించండి',
-    'hero.eyebrow': 'ఆంధ్రప్రదేశ్‌లో సముద్రపు విహారయం',
-    'hero.title.line1': 'బాపట్ల తరంగాలను',
-    'hero.title.line2': 'తెలుసుకోండి',
-    'hero.lead': 'బాపట్ల తీరంలో విస్తారమైన ఇసుక తీరాలు, బంగారు సూర్యోదయాలు, తాజా సముద్రాహారం మరియు ప్రశాంత సముద్రానుభూతులు.',
-    'hero.cta.primary': 'ప్రయాణాన్ని ప్లాన్ చేయండి',
-    'hero.cta.secondary': 'చారువులను చూడండి',
-    'hero.highlight1': '5 అందమైన తీరం',
-    'hero.highlight2': 'అక్టోబర్–మార్చ్‌లో ఉత్తమం',
-    'hero.highlight3': 'సులభమైన వారాంతపు పర్యటన',
-    'stats.beaches': 'తీర stretches',
-    'stats.coastline': 'సముద్ర తీరం',
-    'stats.traveler': 'ప్రయాణికుల రేటింగ్',
-    'stats.wave': 'సముద్రపు వాతావరణం',
-    'section.beaches.eyebrow': 'తీర విహారాలు',
-    'section.beaches.title': 'మీకు నచ్చిన ఇసుక ప్రదేశాన్ని ఎంచుకోండి',
-    'beach.bestTime': 'ఉత్తమమైన సమయం:',
-    'beach.distance': 'దూరం:',
-    'beach.suryalanka.desc': 'దీని స్వచ్ఛమైన తీర, పొడవైన ప్రతినిధి వీధి మరియు పచ్చని సూర్యోదయం చూడటానికి ప్రసిద్ధి.',
-    'beach.suryalanka.bestTime': 'నవంబర్–ఫిబ్రవరి',
-    'beach.bapatla.desc': 'తీరప్రాంతం యొక్క హృదయం, సూర్యాస్తమయం నడక, కుటుంబ వాకింగ్ మరియు చిన్న సముద్ర విహారాలకు అద్భుతం.',
-    'beach.bapatla.bestTime': 'అక్టోబర్–మార్చి',
-    'beach.vadarevu.desc': 'చిన్నప్పటినుంచి ప్రశాంతమైన తీరం, విశాలమైన వీక్షణలతో నిదానంగా ప్రారంభించేందుకు సరిపోతుంది.',
-    'beach.vadarevu.bestTime': 'నవంబర్–జనవరి',
-    'beach.chirala.desc': 'స్వచ్ఛమైన ఇసుక, స్థానిక రంగు మరియు సులభమైన ప్రాప్తితో గ్రామీణ సౌందర్యాన్ని ఇస్తుంది.',
-    'beach.chirala.bestTime': 'సెప్టెంబర్–ఫిబ్రవరి',
-    'section.activities.eyebrow': 'మరింత అనుభవం',
-    'section.activities.title': 'తీరంలో జరిగే కార్యకలాపాలు',
-    'activities.beach.title': 'తీర కార్యకలాపాలు',
-    'activities.beach.text': 'మృదువైన తరంగాలు, రహదారి నడక, కుటుంబ పిక్నిక్స్, బీచ్ గేమ్స్ మరియు సూర్యాస్తమయం ఫోటోగ్రఫీ.',
-    'activities.sunrise.title': 'సూర్యోదయం & సూర్యాస్తమయం',
-    'activities.sunrise.text': 'చువ్వగా చిలికే ఎరుపు వెలుతురు, చేపలు పట్టే ఓడలు మరియు దగ్గరలోని ప్రదేశాల వీక్షణలు.',
-    'activities.food.title': 'స్థానిక వంటకం',
-    'activities.food.text': 'ఆంధ్ర ఫేవరెట్లైన మురగునైనా, తాజా ప్రావిస్, కొబ్బరి ఆధారిత కూరలు మరియు స్ట్రీట్ నోట్లు.',
-    'activities.temples.title': 'దగ్గర్లో ఉన్న దేవాలయాలు',
-    'activities.temples.text': 'చారువులకు దగ్గర్లో ఉన్న చరిత్రాత్మక దేవాలయాలు మరియు ప్రశాంతమైన తీర్థక్షేత్రాలను సందర్శించండి.',
-    'section.visit.eyebrow': 'ప్రయాణ వివరాలు',
-    'section.visit.title': 'మీ బాపట్ల ప్రయాణాన్ని ప్లాన్ చేయండి',
-    'visit.reach.title': 'ఎలా చేరుకోవాలి',
-    'visit.reach.road': 'రోడ్డు ద్వారా:',
-    'visit.reach.roadText': 'విజయవాడ, గుంటూరు, చెన్నై నుంచి NH 16 మరియు స్థానిక రహదారుల ద్వారా సులభంగా చేరవచ్చు.',
-    'visit.reach.rail': 'రైలు ద్వారా:',
-    'visit.reach.railText': 'బాపట్ల మరియు సమీప స్టేషన్లు స Scenic రైలు ప్రయాణాలను అందిస్తాయి.',
-    'visit.reach.air': 'సమీప విమానాశ్రయం:',
-    'visit.reach.airText': 'విజయవాడ విమానాశ్రయం అత్యంత దగ్గరైన ప్రధాన విమానాశ్రయం, రోడ్డు మార్గంలో 3–4 గంటలు.',
-    'visit.experience.title': 'ఉత్తమ కాలం & బస',
-    'visit.season': 'ఉత్తమ కాలం:',
-    'visit.seasonText': 'అక్టోబర్ నుంచి మార్చి వరకు చల్లని వాతావరణం మరియు సౌకర్యవంతమైన తీరం నడకలకు సరిపోతుంది.',
-    'visit.stay': 'బస ఎంపికలు:',
-    'visit.stayText': 'కుటుంబాలకు అనువైన గృహాలు, బీచ్ రిసార్ట్లు మరియు తీరప్రాంతానికి దగ్గరగా బడ్జెట్ గెస్ట్హౌస్లు.',
-    'visit.safety': 'సురక్షా సూచనలు:',
-    'visit.safetyText': 'నిర్దేశించిన ప్రాంతాల్లో మాత్రమే ఈత కొట్టండి, చిన్నారులను పర్యవేక్షించండి మరియు రాత్రివేళ ప్రత్యేకంగా ఏకాంత ప్రదేశాలను నివారించండి.',
-    'section.gallery.eyebrow': 'తీరపు క్షణాలు',
-    'section.gallery.title': 'గ్యాలరీ',
-    'section.app.eyebrow': 'త్వరలో రానుంది',
-    'section.app.title': 'బాపట్ల వేవ్స్ అండ్రాయిడ్ యాప్',
-    'section.app.text': 'తీర మార్గాలు, దివ్య వీక్షణలు, స్థానిక అనుభవాలు మరియు సముద్ర పర్యటన ప్రణాళిక కోసం మీ వ్యక్తిగత మార్గదర్శి.',
-    'section.app.badge': 'Google Playలో త్వరలో ప్రారంభం',
-    'section.app.button': 'నాకు తెలియజేయండి',
-    'section.about.eyebrow': 'మా కథ',
-    'section.about.title': 'బాపట్ల తీరాన్ని ప్రయాణికులకు అందించడమే లక్ష్యం',
-    'section.about.text': 'బాపట్ల వేవ్స్ బాపట్ల నేపద్యం, స్థానిక సంస్కృతి మరియు సందర్శకులకు సులభమైన అనుభవాలను తెలియజేసేందుకు రూపొందించబడింది.',
-    'section.contact.eyebrow': 'అందుబాటులో ఉన్నాయి',
-    'section.contact.title': 'మీ తదుపరి బీచ్ ట్రిప్‌ను ప్లాన్ చేయండి',
-    'contact.name': 'పేరు',
-    'contact.email': 'ఇమెయిల్',
-    'contact.message': 'సందేశం',
-    'contact.submit': 'సందేశం పంపు'
-  }
-};
-
-const langButtons = document.querySelectorAll('.lang-btn');
 const toast = document.getElementById('toast');
 
 function showToast(message) {
@@ -169,30 +9,6 @@ function showToast(message) {
     toast.classList.remove('visible');
   }, 2400);
 }
-
-function translatePage(lang) {
-  const content = translations[lang];
-  document.querySelectorAll('[data-i18n]').forEach((element) => {
-    const key = element.getAttribute('data-i18n');
-    if (content[key]) {
-      element.textContent = content[key];
-    }
-  });
-
-  langButtons.forEach((button) => {
-    button.classList.toggle('active', button.dataset.lang === lang);
-  });
-
-  document.documentElement.lang = lang;
-}
-
-langButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    const selected = button.dataset.lang;
-    translatePage(selected);
-    showToast(selected === 'en' ? 'Language set to English' : 'భాష తెలుగు గా మార్చబడింది');
-  });
-});
 
 const forms = document.querySelectorAll('form');
 forms.forEach((form) => {
@@ -624,7 +440,6 @@ if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', () => {
     setupMobileNav();
     window.addEventListener('resize', setupMobileNav);
-    translatePage('en');
     loadEmergencyContacts();
     loadTempleCards();
     loadTouristCards();
@@ -638,7 +453,6 @@ if (document.readyState === 'loading') {
 } else {
   setupMobileNav();
   window.addEventListener('resize', setupMobileNav);
-  translatePage('en');
   loadEmergencyContacts();
   loadTempleCards();
   loadTouristCards();
