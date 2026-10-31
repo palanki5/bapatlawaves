@@ -3,15 +3,15 @@
     "rewrite": "/index.html",
     "exclude": [
       "/assets/*",
-      "/**/*.png",
-      "/**/*.jpg",
-      "/**/*.jpeg",
-      "/**/*.gif",
-      "/**/*.svg",
-      "/**/*.ico",
-      "/**/*.txt",
-      "/**/*.css",
-      "/**/*.js"
+      "/*.png",
+      "/*.jpg",
+      "/*.jpeg",
+      "/*.gif",
+      "/*.svg",
+      "/*.ico",
+      "/*.txt",
+      "/*.css",
+      "/*.js"
     ]
   },
   "routes": [
