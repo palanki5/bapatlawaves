@@ -536,6 +536,33 @@ function setupCategoryTabs(targetId, filePath, defaultCategory, emptyMessage) {
   loadCategoryFilteredItems(filePath, targetId, activeCategory, emptyMessage);
 }
 
+function setupMobileNav() {
+  const navWrap = document.querySelector('.nav-wrap');
+  const nav = document.querySelector('.main-nav');
+  if (!navWrap || !nav) return;
+
+  let toggle = navWrap.querySelector('.mobile-nav-toggle');
+  if (!toggle) {
+    toggle = document.createElement('button');
+    toggle.type = 'button';
+    toggle.className = 'mobile-nav-toggle';
+    toggle.setAttribute('aria-label', 'Toggle navigation menu');
+    toggle.innerHTML = '<span></span><span></span><span></span>';
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('mobile-open');
+      toggle.classList.toggle('active', nav.classList.contains('mobile-open'));
+    });
+    navWrap.appendChild(toggle);
+  }
+
+  const isMobile = window.innerWidth <= 980;
+  toggle.style.display = isMobile ? 'inline-flex' : 'none';
+  if (!isMobile) {
+    nav.classList.remove('mobile-open');
+    toggle.classList.remove('active');
+  }
+}
+
 async function loadCategoryFilteredItems(filePath, targetId, selectedCategory, emptyMessage) {
   const gallery = document.getElementById(targetId);
   if (!gallery) return;
@@ -595,6 +622,8 @@ async function loadHotelCatalog(selectedCategory = 'Beach resorts') {
 
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', () => {
+    setupMobileNav();
+    window.addEventListener('resize', setupMobileNav);
     translatePage('en');
     loadEmergencyContacts();
     loadTempleCards();
@@ -607,6 +636,8 @@ if (document.readyState === 'loading') {
     setupCategoryTabs('shopping-gallery', 'shopping/shopping_list.txt', 'Clothing', 'No shopping options found');
   });
 } else {
+  setupMobileNav();
+  window.addEventListener('resize', setupMobileNav);
   translatePage('en');
   loadEmergencyContacts();
   loadTempleCards();
