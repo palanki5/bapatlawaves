@@ -1007,29 +1007,108 @@ textarea {
   }
 
   .nav-wrap {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.75rem;
-    padding: 0.65rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    min-height: 74px;
+    padding: 0.55rem 0;
+  }
+
+  .brand {
+    font-size: clamp(0.9rem, 2vw, 1.3rem);
+    white-space: nowrap;
+    letter-spacing: -0.04em;
+    flex-shrink: 0;
+  }
+
+  .brand span {
+    white-space: nowrap;
   }
 
   .main-nav {
+    display: none;
+    position: absolute;
+    top: calc(100% + 0.4rem);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.3rem;
+    padding: 0.6rem;
+    background: rgba(255, 255, 255, 0.98);
+    border: 1px solid rgba(17, 35, 52, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(17, 35, 52, 0.1);
+  }
+
+  .main-nav.mobile-open {
     display: flex;
-    flex-wrap: wrap;
-    order: 3;
-    width: 100%;
-    justify-content: center;
-    gap: 0.35rem;
+  }
+
+  .nav-group {
+    position: static;
+  }
+
+  .nav-dropdown {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    border: 0;
+    background: rgba(15, 122, 179, 0.03);
+    border-radius: 12px;
+    padding: 0.4rem;
+    margin-top: 0.35rem;
   }
 
   .nav-trigger,
   .main-nav > a {
-    font-size: 0.78rem;
+    font-size: 0.76rem;
     padding: 0.5rem 0.7rem;
+    white-space: nowrap;
+    width: 100%;
+    justify-content: center;
   }
 
-  .brand {
-    font-size: clamp(1.1rem, 3vw, 1.5rem);
+  .lang-toggle {
+    flex-shrink: 0;
+  }
+
+  .mobile-nav-toggle {
+    display: inline-flex;
+    flex-shrink: 0;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 999px;
+    border: 1px solid rgba(17, 35, 52, 0.08);
+    background: rgba(15, 122, 179, 0.06);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.25rem;
+    cursor: pointer;
+  }
+
+  .mobile-nav-toggle span {
+    display: block;
+    width: 1.1rem;
+    height: 2px;
+    border-radius: 999px;
+    background: var(--slate-900);
+  }
+
+  .mobile-nav-toggle.active span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .mobile-nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile-nav-toggle.active span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
   }
 }
 
@@ -1062,10 +1141,12 @@ textarea {
   }
 
   .brand {
-    font-size: 0.9rem;
+    font-size: 0.82rem;
   }
 
-  .lang-toggle {
-    margin-left: auto;
+  .nav-trigger,
+  .main-nav > a {
+    font-size: 0.6rem;
+    padding: 0.38rem 0.42rem;
   }
 }
